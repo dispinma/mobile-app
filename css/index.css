@@ -1,0 +1,399 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+html {		
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	background: url(../images/background.jpg);
+		padding: 0 0 0 0;
+		color: rgba(255, 255, 255, 0.7);	
+		background-size: cover;
+		height:auto;
+		margin: auto;
+    width: 100%;
+    display: block;
+}
+
+
+body {
+	font-size: 30px;
+	filter: alpha(Opacity=90);
+	font-weight: bold;
+	text-transform: uppercase;	
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+}
+/* Portrait layout (default) */
+.app {
+   
+    position:absolute;             
+    left:50%;
+    top:50%;
+    height:50px;                   
+    width:225px;                  
+    text-align:center;
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+	color: #F50D0D;
+	font-size: x-large;
+	font-weight: 200;
+	margin: 0px;
+	overflow: visible;
+	padding: 0px;
+	text-align: center;
+	font-family: inherit;
+	font-style: inherit;
+	text-shadow: 3px 3px 0px #000;
+	background-color:rgba(245,245,245,0.8);
+	border: 1px solid #ccc;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    display:block;
+}
+
+.event.received {
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+.thumbs {
+	width: 221px;
+	height: 317px;
+	margin: auto;
+}
+
+p {
+	background-color:rgba(245,245,245,0.5);
+	color: #F80B10;
+}
+
+
+#largeImage {
+	margin: auto;
+	width: 50%;
+	position: relative;
+	border: 3px solid #DE0D2B;
+	padding: 10px;
+}
+
+.row{
+	margin: auto;
+	paddig: 5px;
+	float: left;
+	}
+
+p {
+	border: solid black;
+	text-shadow: 3px 3px 0px #000;
+	background-color:rgba(245,245,245,0.7);
+	border: 1px solid #ccc;
+}
+
+.row2 {
+	margin: auto;
+	float:right;
+}
+
+.container {
+	text-align: center;
+	align-content: center;
+	margin: auto;
+	
+}
+	
+	
+	h2 {
+		color: #F50D0D;
+	}
+
+.col-xs-12{
+	text-align: center;
+	margin: auto;
+	font-size: 18px;
+}
+
+
+div#main{
+width: 830px;
+height: 650px;
+margin: 0px auto;
+font-family: 'Ubuntu', sans-serif;
+}
+ 
+div#form_sample{
+text-align:center;
+border: 1px solid #ccc;
+width: 300px;
+padding: 0px 50px 15px;
+margin-top:20px;
+box-shadow: 0 0 15px;
+border-radius: 6px;
+float:left;
+margin: auto;
+}
+ 
+#main h1{
+margin-top:40px;
+margin: auto;
+}
+ 
+hr{
+	margin: auto;
+margin-top:-5px;
+}
+ 
+label{
+float: left;
+font-size: 16px;
+}
+ 
+input[type="text"]{
+width:100%;
+margin-top:10px;
+height: 35px;
+margin-bottom: 25px;
+padding:10px;
+border:3px solid #2BC1F2;
+}
+ 
+textarea{
+width:100%;
+border:3px solid #2BC1F2;
+padding:10px;
+margin-bottom: 25px;
+margin-top: 10px;
+height: 100px;
+resize:none;
+}
+ 
+input[type="submit"]{
+width:100%;
+padding: 10px 45px;
+border: none;
+color: white;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+font-family: 'Ubuntu', sans-serif;
+}                                                                                                                                                                                             
+
+#form_sample {
+	margin: auto;
+	float:left;
+	position:relative;
+	background-color:grey;
+}
+
+#descriptionx{
+	position: relative;
+	opacity: 1;
+	text-shadow: 3px 3px 0px #000;
+	background-color:rgba(245,245,245,0.5);
+	border: 1px solid #ccc;
+	}
+	
+	form {
+    margin-left:auto;
+    margin-right:auto;
+    width: 343px;
+    height: 333px;
+    padding:30px;
+    border: 1px solid rgba(0,0,0,.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(0, 0, 0, 0.5); 
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden; 
+	padding-bottom: 10px;
+	margin-bottom:auto;
+}
+
+textarea{
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px; 
+    width: 276px;
+    height: 110px;
+    border: 1px solid rgba(255,255,255,.6);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:18px;
+    color:#fff;
+    padding-left:45px;
+    padding-right:20px;
+    padding-top:12px;
+    margin-bottom:20px;
+    overflow:hidden;
+}
+
+input {
+    width: 276px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255,.4);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:18px;
+    color:#fff;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+}
+
+input[type=submit] {
+    cursor:pointer;
+}
+
+input.name {
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_name.png) no-repeat scroll 16px 16px; 
+	  padding-left:45px;
+}
+
+input.email {
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_email.png) no-repeat scroll 16px 20px;
+	  padding-left:45px;
+}
+
+input.message {
+	  background: rgba(255, 255, 255, 0.4) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;
+	  padding-left:45px;
+}
+
+::-webkit-input-placeholder {
+	  color: #fff;
+}
+
+:-moz-placeholder{ 
+    color: #fff; 
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {  
+	  color: #fff; 
+}
+
+input:focus, textarea:focus { 
+	  background-color: rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+	  overflow: hidden; 
+}
+
+.btn {
+	  width: 138px;
+	  height: 44px;
+	  -moz-border-radius: 4px;
+	  -webkit-border-radius: 4px;
+	  border-radius: 4px;
+	  float:right;
+    border: 1px solid #253737;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
+    background: -webkit-linear-gradient(top, #6da5a3, #416b68);
+    background: -moz-linear-gradient(top, #6da5a3, #416b68);
+    background: -ms-linear-gradient(top, #6da5a3, #416b68);
+    background: -o-linear-gradient(top, #6da5a3, #416b68);
+    background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+    padding: 10.5px 21px;
+    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    text-shadow: #333333 0 1px 0;
+    color: #e1e1e1;
+}
+
+.btn:hover {
+    border: 1px solid #253737;
+    text-shadow: #333333 0 1px 0;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+    background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+    background: -moz-linear-gradient(top, #77b2b0, #416b68);
+    background: -ms-linear-gradient(top, #77b2b0, #416b68);
+    background: -o-linear-gradient(top, #77b2b0, #416b68);
+    background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+    color: #fff;
+ }
+
+.btn:active {
+    margin-top:1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #253737;
+    background: #6da5a3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#416b68), to(#416b68));
+    background: -webkit-linear-gradient(top, #416b68, #609391);
+    background: -moz-linear-gradient(top, #416b68, #6da5a3);
+    background: -ms-linear-gradient(top, #416b68, #6da5a3);
+    background: -o-linear-gradient(top, #416b68, #6da5a3);
+    background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+    color: #fff;
+    -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+   }
+
+	
+	footer {
+		margin:10px;
+		padding:10px;
+		border:solid black;
+	}

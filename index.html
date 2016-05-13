@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design a mobile application</title>
+
+<!-- Bootstrap -->
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<nav class="navbar navbar-default">
+  <div class="container"> 
+    
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">en-COMICS-lapedia</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="myDefaultNavbar1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="contact.html">Contact page <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://comicvine.gamespot.com/">Visit COMICVINES</a></li>
+        <li class="dropdown"> </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+          
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+</div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs12" style="color: #FC0000">
+          <h1>TOP<span style="color: #FF0000"> RATED ISSUES.</span></h1>
+          <p><span style="color: #D01619">This is the one stop shop for all you favorite highest rated story arcs, all in on easy to use app</span>.</p>
+        </div>
+      </div>
+    </div>
+  
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h1>STAND OUT STORY ARCS</h1>
+        <p>BELOW IS A SEECTION OF THE TOP 4 ISSUES VITED BY YOU. PLEASE FEEL FREE TO RATE, COMMENT OR DOWNLOAD THE ISSUES</p>
+      </div>
+    </div>
+  </div>
+</section>
+					
+
+<section>
+	<div class="container">
+		
+          <div class="row">
+            <img src="images/image_01_thumb.jpg" alt="THE KILLING JOKE" width="213" height="317" />
+          </div>
+          
+         <div class="row2">
+            <img src="images/image_02_thumb.jpg" alt="DEATH OF A FAMILY" width="227" height="317" />
+         </div>
+         
+          <hr>
+         
+           <div id="gallery">
+           		<div id="panel">
+                    <img id="largeImage" src="images/image_01_large.jpg" alt="gallery"/>
+                    <div id="description" style="color: #FF0000">1st image description</div>
+                </div>
+            </div>
+          
+                    <div class="row">
+                        <img src="images/image_03_thumb.jpg" alt="" width="221" height="317">
+                    </div>
+                
+                    <div class="row2">  
+                        <img src="images/image_04_thumb.jpg" alt="" width="210" height="317">
+                    </div>
+     </div>
+	
+</section>
+<hr>
+
+<script>
+
+$('.row').delegate('img','click', function(){
+	$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+	$('#description').html($(this).attr('alt'));
+});
+
+$('.row2').delegate('img','click', function(){
+	$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+	$('#description').html($(this).attr('alt'));
+});
+</script>
+
+    <section>
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+               <h1>TOP 4 RATED COMICS OF THE MONTH</h1>
+               <p>LHERE ARE THE TOP 4 COMICS OF ALL TIME AS VOTED BY YOU</p>
+            </div>
+        </div>
+      </div>
+    </section>
+<hr>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>AN APP FROM BIKK DESIGNS. All rights reserved.</p>
+      </div>
+    
+	</div>
+  </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+
+
+
+	
+</body>
+</html>
